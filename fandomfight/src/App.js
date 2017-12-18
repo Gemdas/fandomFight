@@ -61,7 +61,7 @@ function pokemon(id) {
       }
       else{
         this.state.gamesBoard[this.state.gamesBoard.indexOf(objClicked)].clicked();
-        if((this.state.score+1)%12 !== 0){
+        if((this.state.score + 1) % 12 !== 0){
           this.setState({
             score: this.state.score+1,
             gamesBoard: this.shuffle(this.state.gamesBoard)
